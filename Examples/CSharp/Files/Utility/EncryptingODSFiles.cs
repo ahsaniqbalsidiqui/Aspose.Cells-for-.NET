@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
 
             // Instantiate a Workbook object.
             // Open an ODS file.
-            Workbook workbook = new Workbook(sourceDir + "sampleEncryptingODSFiles.ods", loadOptions);
+            Workbook workbook = new Workbook(sourceDir + "sampleODSFile.ods", loadOptions);
 
             //Encryption options are not effective for ODS files
 
@@ -31,7 +31,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             workbook.Settings.Password = "1234";
 
             // Save the excel file.
-            workbook.Save(outputDir + "outputEncryptingODSFiles.ods");
+            workbook.Save(outputDir + "outputEncryptedODSFile.ods");
 
             //Decrypt ODS file
             //Decrypted ODS file can be opened both in Excel and OpenOffice          
@@ -40,7 +40,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             loadOptions.Password = "1234";
 
             // Load the encrypted ODS file with the appropriate load options
-            Workbook encrypted = new Workbook(outputDir + "outputEncryptingODSFiles.ods", loadOptions);
+            Workbook encrypted = new Workbook(sourceDir + "sampleEncryptedODSFile.ods", loadOptions);
 
             // Unprotect the workbook
             encrypted.Unprotect("1234");
@@ -49,7 +49,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             encrypted.Settings.Password = null;
 
             // Save the decrypted ODS file
-            encrypted.Save(outputDir + "outputDecryptingODSFiles.ods");
+            encrypted.Save(outputDir + "outputDecryptedODSFile.ods");
 
             Console.WriteLine("Encryption/Decryption of ODS file executed successfully");
         }
