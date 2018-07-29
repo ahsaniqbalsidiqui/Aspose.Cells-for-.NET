@@ -874,6 +874,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ImportingFromDataColumn.Run();
             //ImportingFromDataGrid.Run();
             //ImportingFromDataTable.Run();
+            ImportingFromDynamicDataTable.Run();
             //ImportingFromDataView.Run();
 
             //// Processing
