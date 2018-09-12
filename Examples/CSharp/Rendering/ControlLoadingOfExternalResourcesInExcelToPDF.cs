@@ -47,7 +47,6 @@ namespace Aspose.Cells.Examples.CSharp.Rendering
             PdfSaveOptions opts = new PdfSaveOptions();
             opts.OnePagePerSheet = true;
             opts.StreamProvider = new MyStreamProvider();
-
             //Save the workbook to Pdf
             wb.Save(outputDir + "outputPdfSaveOptions_StreamProvider.pdf", opts);
 

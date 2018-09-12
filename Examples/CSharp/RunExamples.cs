@@ -338,6 +338,7 @@ namespace Aspose.Cells.Examples.CSharp
             //DivTagsLayout.Run();
             //LoadWorkbookWithPrinterSize.Run();
             //CreateTextBoxWithDifferentHorizontalAlignment.Run();
+            ApplyingTextAlignmentToPartialTextInsideTheTextBox.Run();
             //SetTextboxOrShapeParagraphLineSpacing.Run();
             //UpdateActiveXComboBoxControl.Run();
             //FindDataPointsInPieBar.Run();
@@ -874,7 +875,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ImportingFromDataColumn.Run();
             //ImportingFromDataGrid.Run();
             //ImportingFromDataTable.Run();
-            ImportingFromDynamicDataTable.Run();
+            //ImportingFromDynamicDataTable.Run();
             //ImportingFromDataView.Run();
 
             //// Processing
